@@ -26,6 +26,11 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         powerupIndicator.transform.position = transform.position + new Vector3(0f, -0.5f, 0f);
+
+        if (transform.position.y < -10f)
+        {
+            Destroy(gameObject);
+        }
     }
 
     // FixedUpdate is called on a fixed physics loop

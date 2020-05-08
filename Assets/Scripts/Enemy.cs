@@ -24,6 +24,7 @@ public class Enemy : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (!player) return;
         /// challenge: set lookDirection to "enemy to player" vector
         Vector3 lookDirection = player.transform.position - transform.position;
         enemyRb.AddForce(lookDirection.normalized * speed);
