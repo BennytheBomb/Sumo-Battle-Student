@@ -10,8 +10,14 @@ public class SpawnManager : MonoBehaviour
 
     void Start()
     {
+<<<<<<< HEAD
         SpawnEnemyWave(waveNumber);
         SpawnPowerup();
+=======
+        //SpawnEnemyWave(waveNumber);
+        //SpawnPowerup();
+        //Instantiate(..., ..., ...);
+>>>>>>> parent of 35c2ddd (Added challenge comments)
     }
 
     void Update()
@@ -25,7 +31,6 @@ public class SpawnManager : MonoBehaviour
         }
     }
 
-    /// challenge: spawn specified numberOfEnemies using Instantiate(...)
     void SpawnEnemyWave(int numberOfEnemies)
     {
         for (int i = 0; i < numberOfEnemies; i++)

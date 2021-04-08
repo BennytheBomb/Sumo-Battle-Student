@@ -1,6 +1,6 @@
 ﻿/// Hint: Commenting or uncommenting in VS
 /// On Mac: CMD + SHIFT + 7
-/// On Windows: CTRL + K and then CTRL + C
+/// On Windows: CTRL + K -> CTRL + C
 
 using UnityEngine;
 
@@ -61,9 +61,13 @@ public class PlayerController : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         GameObject other = collision.gameObject;
+<<<<<<< HEAD
         /// challenge: when other has tag "Enemy" and we have a powerup
         /// get the enemyRigidbody and push the enemy away from the player
         if (other.CompareTag("Enemy") && hasPowerup)
+=======
+        if (true)
+>>>>>>> parent of 35c2ddd (Added challenge comments)
         {
             Rigidbody enemyRigidbody = other.GetComponent<Rigidbody>();
             Vector3 awayFromPlayer = other.transform.position - transform.position;
