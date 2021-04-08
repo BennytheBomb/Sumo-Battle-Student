@@ -62,10 +62,13 @@ public class PlayerController : MonoBehaviour
     {
         GameObject other = collision.gameObject;
 <<<<<<< HEAD
+<<<<<<< HEAD
         /// challenge: when other has tag "Enemy" and we have a powerup
         /// get the enemyRigidbody and push the enemy away from the player
         if (other.CompareTag("Enemy") && hasPowerup)
 =======
+=======
+>>>>>>> parent of 35c2ddd (Added challenge comments)
         if (true)
 >>>>>>> parent of 35c2ddd (Added challenge comments)
         {
